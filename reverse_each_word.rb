@@ -1,9 +1,8 @@
-def reverse_each_word (sentence)
-  arr = []
-  arr_reversed = []
-  arr << sentence.split(" ")
-  arr.each do |word|
-    arr_reversed << word.reverse
+def reverse_each_word_with_each (sentence)
+  arr_with_sentence = sentence.split(" ")
+  array_reversed_words = []
+  arr_with_sentence.each do |word|
+    array_reversed_words << word.reverse
   end
-  arr_reversed.join(" ")
+  array_reversed_words.join(" ")
 end
